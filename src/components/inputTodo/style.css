@@ -1,0 +1,12 @@
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+form input.inputTodo {
+  color: white;
+  background-color: #25273c;
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */

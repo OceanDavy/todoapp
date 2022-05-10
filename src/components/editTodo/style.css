@@ -1,0 +1,11 @@
+td.tdEdit {
+  width: 36px;
+  text-align: center;
+}
+
+td.tdEdit button.editBtn {
+  background-color: #25273c;
+  color: #acaec9;
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */

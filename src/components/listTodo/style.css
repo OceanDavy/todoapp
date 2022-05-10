@@ -1,0 +1,79 @@
+table.listTodo {
+  position: relative;
+  top: 10px;
+  width: 100%;
+  background-color: #25273c;
+  border-radius: 6px;
+}
+
+table.listTodo tbody tr {
+  list-style-type: none;
+  color: #acaec9;
+}
+
+table.listTodo tbody tr td.tdCheck {
+  padding: 0px 7px;
+  width: 36px;
+  text-align: center;
+}
+
+table.listTodo tbody tr td.tdCheck label.checkBtn {
+  display: block;
+  position: relative;
+  padding: 0px 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+table.listTodo tbody tr td.tdCheck label.checkBtn input.myCheck {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+table.listTodo tbody tr td.tdCheck label.checkBtn span.checkmark {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  border: 1px solid #616161;
+  width: 25px;
+  height: 25px;
+  background-color: none;
+  border-radius: 50%;
+}
+
+table.listTodo tbody tr td.tdCheck label:hover input ~ span.checkmark {
+  border: 1px solid #d9d9d9;
+}
+
+table.listTodo tbody tr td.tdCheck label.checkBtn input:checked ~ span.checkmark {
+  background: #f5c1f1;
+  background: radial-gradient(circle, #f5c1f1 14%, #efbbef 27%, #8243c9 56%, #6882ff 94%);
+}
+
+table.listTodo tbody tr td.tdDescription {
+  padding: 18px 4px;
+}
+
+table.listTodo tbody tr .marked {
+  text-decoration: line-through;
+  color: aquamarine;
+  border: 1px solid red;
+}
+
+table.listTodo tbody tr td.tdDelete {
+  width: 36px;
+  text-align: center;
+}
+
+table.listTodo tbody tr td.tdDelete button.deletebtn {
+  background-color: #25273c;
+  color: #acaec9;
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */

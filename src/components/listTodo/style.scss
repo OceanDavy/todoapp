@@ -1,0 +1,79 @@
+@import '../../css/scssglobal/variables';
+
+table.listTodo{
+    position: relative;
+    top: 10px;
+    width: 100%;
+    background-color: #25273c;
+    border-radius: 6px;
+    tbody{
+        tr{
+            list-style-type: none;
+            color: $BlueGrayish;
+            td.tdCheck{
+                padding: 0px 7px;
+                width: 36px;
+                text-align: center;
+
+                label.checkBtn{
+                    display: block;
+                    position: relative;
+                    padding: 0px 12px;
+                    cursor: pointer;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    input.myCheck{
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                    }
+                    span.checkmark{
+                        position: absolute;
+                        top: -7px;
+                        left: 0;
+                        border: 1px solid #616161;
+                        width: 25px;
+                        height: 25px;
+                        background-color: none;
+                        border-radius: 50%;
+                    }
+                }
+                label:hover input ~ span.checkmark {
+                    border:1px solid rgb(217, 217, 217);
+                }
+                label.checkBtn input:checked ~ span.checkmark{
+                    background: rgb(245,193,241);
+                    background: radial-gradient(circle, 
+                        rgba(245,193,241,1) 14%, 
+                        rgba(239,187,239,1) 27%, 
+                        rgba(130,67,201,1) 56%, 
+                        rgba(104,130,255,1) 94%);
+                    
+                }
+            }
+            
+            td.tdDescription{
+                padding: 18px 4px;
+            }
+            .marked{
+                text-decoration: line-through;
+                color: aquamarine;
+                border: 1px solid red;
+            }
+    
+            td.tdDelete{
+                width: 36px;
+                text-align: center;
+                button.deletebtn{
+                    background-color: #25273c;
+                    color: $BlueGrayish;
+                    border: none;    
+                }  
+            } 
+        }
+    }
+}
